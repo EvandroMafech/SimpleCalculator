@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    min-height: 100vh; /* alinha o corpo no centro da view port verticalmente*/
+    justify-content:center; /* Alinha os itens no centro horizontalmente*/
+    align-items: center; /* alinha verticalmente*/
+    background-color: rgb(166, 248, 248);
+    flex-direction: column;
+}
+
+.main{
+    display: flex;
+    background-color: rgba(1, 102, 40, 0.521);
+    width: 400px;
+    height: 550px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(38, 102, 63, 0.562); /*cria uma sombra*/
+    flex-direction: column;
+    align-items: center;
+}
+
+.output{
+    display: flex;
+    background-color: rgba(6, 56, 25, 0.521);
+    margin-top: 15px;
+    margin-bottom: 15px ;
+    width: 100%;
+    height: 50px;
+    max-width: 340px;
+    justify-content: end;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 2.0rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.buttons{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    height: 100%;
+    width: 100%;
+}
+
+.numbers{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+
+}
+
+.operators{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center; 
+    justify-items: center; 
+
+}
+
+.button_operators, .button_number{
+    background-color: rgb(112, 163, 64);
+    height: 60px;
+    width: 60px;
+    border:none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(38, 102, 63, 0.562); /*cria uma sombra*/
+    font-size: 2.0rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
